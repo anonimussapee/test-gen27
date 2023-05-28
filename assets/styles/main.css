@@ -1,0 +1,52 @@
+/* valores por defecto establecidos para no afectar el modelo de caja */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* color del background */
+body{
+  background-color: rgb(182, 180, 168);
+}
+ancho y altura del main
+main{
+  width: 100%;
+  height: auto;
+
+}
+/* estilo del section que contiene al contenedor de tarjetas */
+main .main--element-container{
+  padding-top: 20px;
+  width: 90%;
+  min-width: 320px;
+  height: auto;
+  margin:  0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* estilos del conytenedor de las tarjetas */
+main .main--element-container .product--cards-container{
+  width: 100%;
+  height: auto;
+  display: inherit;
+  flex-wrap: wrap;
+  gap: inherit;
+}
+
+/* estilos de las cards */
+main .main--element-container .product--cards-container .cards{
+  width: 300px;
+  height: inherit;
+  display: inherit;
+  flex-direction: column;
+  gap: inherit;
+  background-color: goldenrod;
+  padding: 10px;
+  border-radius: 20px;
+  border: white 5px groove;
+}
+/* tamaño de las imagenes que contendra el card */
+main .main--element-container .product--cards-container .cards img {
+
+}
