@@ -8,6 +8,20 @@
 body{
   background-color: rgb(182, 180, 168);
 }
+/* ancho y alto del header */
+header{
+  width: 100%;
+  height: auto;
+}
+/* estilos de nav */
+header nav{
+  width: inherit;
+  height: inherit;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 /* ancho y altura del main */
 main{
   width: 100%;
@@ -24,6 +38,12 @@ main .main--element-container{
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+/* estilos del h1 del main */
+.main--element-container h1{
+  font-size: 30px;
+  color: blue;
+  text-shadow: black 2px 0 2px;
 }
 /* estilos del conytenedor de las tarjetas */
 main .main--element-container .product--cards-container{
@@ -45,8 +65,32 @@ main .main--element-container .product--cards-container .cards{
   padding: 10px;
   border-radius: 20px;
   border: white 5px groove;
+  align-items: center;
 }
 /* tamaño de las imagenes que contendra el card */
 main .main--element-container .product--cards-container .cards img {
-
+  width: 250px;
+  height: 200px;
+  border: white 5px  groove;
+  border-radius: 20px;
+}
+/* estilo del h3 del card */
+main .main--element-container .product--cards-container .cards h3{
+  font-size: 24px;
+  text-shadow: white 2px 0 2px;
+}
+/* estilo del precio de las cards */
+main .main--element-container .product--cards-container .cards .price{
+  font-size: 22px;
+  font-weight: bolder;
+}
+/* estilo del details y p de los productos */
+main .main--element-container .product--cards-container .cards details summary{
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+main .main--element-container .product--cards-container .cards details p{
+  font-size: 22px initial;
+  text-align: center;
 }
