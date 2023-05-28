@@ -69,4 +69,20 @@ let data1 = [
         desc: "Cojunto deportivo nike/bulls edición limitada rojo",
         id: 10,
     },
-]
+];
+(()=>{
+    let containerCards = document.querySelector('.product--cards-container');
+    let view = ``;
+    data1.forEach(item =>{
+        view += `<article class="cards">
+        <img src="${item.img}" alt="${item.tittle}">
+        <h3>${item.tittle}</h3>
+        <p class="price">${item.price} $</p>
+        <details>
+          <summary >descripcion del producto</summary>
+          <p>${item.desc}</p>
+        </details>
+      </article>`
+    });
+    containerCards.innerHTML = view;
+})();
