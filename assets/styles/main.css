@@ -21,16 +21,42 @@ header nav{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  background-color: #03071e;
+}
+/* estilo delc ontenedor del logo */
+header nav .main_logo{
+  display: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+}
+/* estilo del logo del nav  */
+header nav .main_logo img{
+  width: 50px;
+  height: 50px;
+}
+/* estilo de los ancors del nav */
+header nav a{
+  text-decoration: none;
+  color:white;
+  font-size: 18px;
+}
+/* estilo del ul del nav  */
+header nav ul{
+  list-style-type: none;
+  display: inherit;
+  gap: 10px;
 }
 /* ancho y altura del main */
 main{
   width: 100%;
   height: auto;
+  padding: 40px 0 40px;
+
 
 }
 /* estilo del section que contiene al contenedor de tarjetas */
 main .main--element-container{
-  padding-top: 20px;
   width: 90%;
   min-width: 320px;
   height: auto;
@@ -84,7 +110,7 @@ main .main--element-container .product--cards-container .cards .price{
   font-size: 22px;
   font-weight: bolder;
 }
-/* estilo del details y p de los productos */
+/* estilo del details de los productos */
 main .main--element-container .product--cards-container .cards details summary{
   font-size: 16px;
   font-weight: 600;
@@ -93,4 +119,19 @@ main .main--element-container .product--cards-container .cards details summary{
 main .main--element-container .product--cards-container .cards details p{
   font-size: 22px initial;
   text-align: center;
+}
+/* estilos del footer  */
+footer{
+  width: 100%;
+  height: auto;
+  padding: 40px 10px 80px;
+  background-color: #03071e;
+}
+footer ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: none;
+  font-size: 17px;
+  color: white;
 }
