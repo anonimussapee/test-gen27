@@ -109,26 +109,4 @@ searchBox.addEventListener("keyup", () => {
     }
     containerCards.innerHTML = view;
 });
-
-
-
-
-let darkMode = document.querySelector(".icon");
-
-darkMode.onclick = function () {
-    document.body.classList.toggle("dark_theme")
-    if(document.body.classList.contains("dark_theme")){
-        darkMode.innerHTML = "&#xE3A9;";
-    } else {
-        darkMode.innerHTML = "&#xE3AA;";
-    }
-};
-
-
-
-
-
-
-
-
     
