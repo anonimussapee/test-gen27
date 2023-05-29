@@ -6,13 +6,13 @@
 }
 
 :root{
-  --primary-color: rgb(182, 180, 168);
+  --primary-color: rgb(139, 139, 139);
   --secondary-color: #03071e;
   --third-color: white;
 }
 
 .dark_theme{
-  --primary-color: rgb(3, 111, 111);
+  --primary-color: rgb(216, 219, 219);
   --secondary-color: #f2f2f5;
   --third-color: rgb(24, 22, 22);
 }
@@ -56,7 +56,7 @@ header nav a{
 }
 /* estilos del icono theme */
 
-header nav .icon{
+header nav .material-symbols-outlined{
   color: var(--third-color);
   transition: ease-out .8s;
 
@@ -66,6 +66,10 @@ header nav ul{
   list-style-type: none;
   display: inherit;
   gap: 10px;
+}
+/* estilo del cursor en elementos con clase cursor */
+.cursor:hover{
+  cursor: pointer;
 }
 /* ancho y altura del main */
 main{
@@ -77,13 +81,15 @@ main{
 }
 /* estilo del section que contiene al contenedor de tarjetas */
 main .main--element-container{
-  width: 90%;
+  width: 95%;
   min-width: 320px;
   height: auto;
   margin:  0 auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  text-align: center;
 }
 /* estilos del h1 del main */
 .main--element-container h1{
@@ -91,18 +97,19 @@ main .main--element-container{
   color: blue;
   text-shadow: black 2px 0 2px;
 }
-/* estilos del conytenedor de las tarjetas */
+/* estilos del contenedor de las tarjetas */
 main .main--element-container .product--cards-container{
   width: 100%;
   height: auto;
   display: inherit;
   flex-wrap: wrap;
   gap: inherit;
+  justify-content: center;
 }
 
 /* estilos de las cards */
 main .main--element-container .product--cards-container .cards{
-  width: 300px;
+  width: 280px;
   height: inherit;
   display: inherit;
   flex-direction: column;
@@ -156,3 +163,38 @@ footer ul{
   color: white;
 }
 
+@media (max-width:760px) {
+  header nav .menu{
+    visibility: visible;
+    transition: ease-out 0s;
+    z-index: 1;
+  }
+  header nav .panel{
+    position: fixed;
+    background-color: var(--secondary-color);
+    top: 0;
+    bottom: 0;
+    right: -250px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    width: 250px;
+    height: auto;
+    padding-top: 80px;
+    transition: ease-out .5s;
+  }
+  header nav .panel.show{
+    right: 0;
+    transition: ease-out .5s;
+  }
+}
+@media (min-width:761px) {
+  header nav .menu{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    transition: ease-out 0s;
+  }
+  
+}

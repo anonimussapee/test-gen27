@@ -71,42 +71,4 @@ let data1 = [
     },
 ];
 
-let containerCards = document.querySelector('.product--cards-container');
-(()=>{
-    
-    let view = ``;
-    data1.forEach(item =>{
-        view += `<article class="cards">
-        <img src="${item.img}" alt="${item.tittle}">
-        <h3>${item.tittle}</h3>
-        <p class="price">${item.price} $</p>
-        <details>
-          <summary >descripcion del producto</summary>
-          <p>${item.desc}</p>
-        </details>
-      </article>`
-    });
-    containerCards.innerHTML = view;
-})();
 
-let searchBox = document.querySelector(".search_box")
-
-searchBox.addEventListener("keyup", () => {
-    let boxValue = (searchBox.value).toLowerCase();
-    let view = ``;
-    for (const item of data1) {
-        if(item.tittle.toLowerCase().includes(boxValue)){
-         view += `<article class="cards">
-         <img src="${item.img}" alt="${item.tittle}">
-         <h3>${item.tittle}</h3>
-         <p class="price">${item.price} $</p>
-         <details>
-           <summary >descripcion del producto</summary>
-           <p>${item.desc}</p>
-         </details>
-       </article>`
-        }
-    }
-    containerCards.innerHTML = view;
-});
-    
