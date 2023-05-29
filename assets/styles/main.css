@@ -54,15 +54,12 @@ header nav a{
   color: var(--third-color);
   font-size: 18px;
 }
-header nav ul #icon{
-  display: inherit;
-  flex-direction: inherit;
-  align-items: inherit;
-}
-#icon{
-  width: 20px;
-  height: 20px;
-  background-color: var(--third-color);
+/* estilos del icono theme */
+
+header nav .icon{
+  color: var(--third-color);
+  transition: ease-out .8s;
+
 }
 /* estilo del ul del nav  */
 header nav ul{
