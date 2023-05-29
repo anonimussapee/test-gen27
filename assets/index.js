@@ -91,12 +91,17 @@ let data1 = [
 darkMode = document.getElementById("icon");
 
 darkMode.onclick = function () {
-    document.body.classList.toggle("dark_theme") 
+    document.body.classList.toggle("dark_theme")
     if(document.body.classList.contains("dark_theme")){
-        darkMode.src = "https://cdn-icons-png.flaticon.com/512/169/169367.png"  
+        darkMode.src = "https://cdn-icons-png.flaticon.com/512/169/169367.png"
     } else {
-        darkMode.src= "https://www.pngmart.com/files/13/Crescent-Moon-PNG-Transparent-Image.png"
+        darkMode.src =  "https://www.pngmart.com/files/13/Crescent-Moon-PNG-Transparent-Image.png"
     }
 };
 
 
+
+
+
+
+    

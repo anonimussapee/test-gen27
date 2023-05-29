@@ -10,11 +10,13 @@
   --secondary-color: #03071e;
   --third-color: white;
 }
+
 .dark_theme{
-  --primary-color: rgb(105, 107, 107);
+  --primary-color: rgb(3, 111, 111);
   --secondary-color: #f2f2f5;
   --third-color: rgb(24, 22, 22);
 }
+
 /* color del background */
 body{
  background-color: var(--primary-color);
