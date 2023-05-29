@@ -98,10 +98,3 @@ darkMode.onclick = function () {
         darkMode.src =  "https://www.pngmart.com/files/13/Crescent-Moon-PNG-Transparent-Image.png"
     }
 };
-
-
-
-
-
-
-    
