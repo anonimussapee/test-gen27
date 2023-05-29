@@ -80,10 +80,12 @@ let containerCards = document.querySelector('.product--cards-container');
         <img src="${item.img}" alt="${item.tittle}">
         <h3>${item.tittle}</h3>
         <p class="price">${item.price} $</p>
+        <button onclick="addToCart(${item.id})">agregar al carrito de compras</button>
         <details>
           <summary >descripcion del producto</summary>
           <p>${item.desc}</p>
         </details>
+
       </article>`
     });
     containerCards.innerHTML = view;
@@ -101,7 +103,7 @@ searchBox.addEventListener("keyup", () => {
          <h3>${item.tittle}</h3>
          <p class="price">${item.price} $</p>
          <details>
-           <summary >descripcion del producto</summary>
+           <summary>descripcion del producto</summary>
            <p>${item.desc}</p>
          </details>
        </article>`
@@ -109,4 +111,5 @@ searchBox.addEventListener("keyup", () => {
     }
     containerCards.innerHTML = view;
 });
-    
+
+
