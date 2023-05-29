@@ -70,8 +70,10 @@ let data1 = [
         id: 10,
     },
 ];
+
+let containerCards = document.querySelector('.product--cards-container');
 (()=>{
-    let containerCards = document.querySelector('.product--cards-container');
+    
     let view = ``;
     data1.forEach(item =>{
         view += `<article class="cards">
@@ -87,8 +89,31 @@ let data1 = [
     containerCards.innerHTML = view;
 })();
 
+let searchBox = document.querySelector(".search_box")
 
-darkMode = document.getElementById("icon");
+searchBox.addEventListener("keyup", () => {
+    let boxValue = (searchBox.value).toLowerCase();
+    let view = ``;
+    for (const item of data1) {
+        if(item.tittle.toLowerCase().includes(boxValue)){
+         view += `<article class="cards">
+         <img src="${item.img}" alt="${item.tittle}">
+         <h3>${item.tittle}</h3>
+         <p class="price">${item.price} $</p>
+         <details>
+           <summary >descripcion del producto</summary>
+           <p>${item.desc}</p>
+         </details>
+       </article>`
+        }
+    }
+    containerCards.innerHTML = view;
+});
+
+
+
+
+let darkMode = document.getElementById("icon");
 
 darkMode.onclick = function () {
     document.body.classList.toggle("dark_theme")
@@ -98,6 +123,7 @@ darkMode.onclick = function () {
         darkMode.src =  "https://www.pngmart.com/files/13/Crescent-Moon-PNG-Transparent-Image.png"
     }
 };
+
 
 
 
