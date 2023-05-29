@@ -113,14 +113,14 @@ searchBox.addEventListener("keyup", () => {
 
 
 
-let darkMode = document.getElementById("icon");
+let darkMode = document.querySelector(".icon");
 
 darkMode.onclick = function () {
     document.body.classList.toggle("dark_theme")
     if(document.body.classList.contains("dark_theme")){
-        darkMode.src = "https://cdn-icons-png.flaticon.com/512/169/169367.png"
+        darkMode.innerHTML = "&#xE3A9;";
     } else {
-        darkMode.src =  "https://www.pngmart.com/files/13/Crescent-Moon-PNG-Transparent-Image.png"
+        darkMode.innerHTML = "&#xE3AA;";
     }
 };
 
