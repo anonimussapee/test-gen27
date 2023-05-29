@@ -4,9 +4,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root{
+  --primary-color: rgb(182, 180, 168);
+  --secondary-color: #03071e;
+  --third-color: white;
+}
+.dark_theme{
+  --primary-color: rgb(105, 107, 107);
+  --secondary-color: #f2f2f5;
+  --third-color: rgb(24, 22, 22);
+}
 /* color del background */
 body{
-  background-color: rgb(182, 180, 168);
+ background-color: var(--primary-color);
 }
 /* ancho y alto del header */
 header{
@@ -22,9 +33,9 @@ header nav{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #03071e;
+  background-color: var(--secondary-color);
 }
-/* estilo delc ontenedor del logo */
+/* estilo del contenedor del logo */
 header nav .main_logo{
   display: inherit;
   flex-direction: inherit;
@@ -38,8 +49,18 @@ header nav .main_logo img{
 /* estilo de los ancors del nav */
 header nav a{
   text-decoration: none;
-  color:white;
+  color: var(--third-color);
   font-size: 18px;
+}
+header nav ul #icon{
+  display: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+}
+#icon{
+  width: 20px;
+  height: 20px;
+  background-color: var(--third-color);
 }
 /* estilo del ul del nav  */
 header nav ul{
@@ -135,3 +156,4 @@ footer ul{
   font-size: 17px;
   color: white;
 }
+
