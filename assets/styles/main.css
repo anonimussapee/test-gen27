@@ -32,6 +32,7 @@ header nav{
   height: inherit;
   padding: 10px;
   display: flex;
+  position:fixed;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -75,7 +76,7 @@ header nav ul{
 main{
   width: 100%;
   height: auto;
-  padding: 40px 0 40px;
+  padding: 80px 0 40px;
 
 
 }
