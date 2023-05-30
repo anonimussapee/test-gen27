@@ -37,6 +37,7 @@ header nav{
   justify-content: space-between;
   align-items: center;
   background-color: var(--secondary-color);
+  z-index: 1;
 }
 /* estilo del contenedor del logo */
 header nav .main_logo{

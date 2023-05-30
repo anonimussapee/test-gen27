@@ -10,29 +10,28 @@ main .main--element-container{
     display: flex;
     flex-direction: column;
     gap: 10px;
-  
     text-align: center;
 }
 
 main .main--element-container .cart-container{
-    
-        width: 280px;
-        height: inherit;
-        display: inherit;
-        flex-direction: column;
-        gap: inherit;
-        background-color: rgb(189, 36, 36);
-        padding: 10px;
-        border-radius: 20px;
-        border: white 5px groove;
-        align-items: center;
-      
+    list-style: none;
+    text-align: center;
+    width: 280px;
+    height: inherit;
+    display: inherit;
+    flex-direction: column;
+    gap: inherit;
+    background-color: rgb(189, 36, 36);
+    padding: 10px;
+    border-radius: 20px;
+    border: white 5px groove;
+    align-items: center;
+    z-index: 0;
 }
 
 .main--element-container{
     display: flex;
     align-items: center;
-    
 }
 
 .main--element-container .cart-container:hover{
@@ -64,11 +63,6 @@ main .main--element-container .cart-container{
 }
 
 /*now we are going to work with the rest of the cart*/
-.cart-container{
-    list-style: none;
-    text-align: center;
-}
-
 .cart-container :nth-child(2n + 2) {
 color: red;
 background-color: black;

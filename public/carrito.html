@@ -6,38 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nuevo titulo</title>
     <link rel="stylesheet" href="../assets/styles/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../assets/styles/carrito.css">
+    <script src="../assets/utils/themesAndPanel.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
 </head>
 <body> 
   <header>
     <nav>
-    <a href="../index.html" class="main_logo"><img src="https://pngfre.com/wp-content/uploads/nike-logo-6-1024x1024.png" alt="NIKELOGO"><p>inicio</p></a>
-    <ul>
-      <li><span class="material-symbols-outlined icon" >
+    <a href="index.html" class="main_logo"><img src="https://pngfre.com/wp-content/uploads/nike-logo-6-1024x1024.png" alt="NIKELOGO"> <p class="cursor">inicio</p></a>
+    <span class="material-symbols-outlined menu cursor">
+      &#xE1BD;
+    </span>
+    <ul class="panel">
+      <li><span class="material-symbols-outlined icon cursor" >
         &#xE3AA;
         </span></li>
-      <li><input type="search" class="search_box"></li>
+      <li><input type="search" class="search_box" placeholder="Que buscabas?"></li>
       <li><a href="#"><span class="material-symbols-outlined">
-        shopping_cart
-        </span> </a></li>
-         <li><a href="#">carrito</a></li>
+        shopping_cart </span> </a></li>
+      <li><a href="./public/carrito.html"><span class="car_status">0</span>carrito</a></li>
+      <li><span class="material-symbols-outlined">
+        ring_volume
+        </span></li>
       <li><a href="#">contactanos</a></li>
+      <li><span class="material-symbols-outlined">
+        payments
+        </span></li>
       <li><a href="#">pago</a></li>
   </ul>
   </nav>
 </header>  
   <main>
     <section class="main--element-container">
-        <div class="head">mis compras 7u7</div>   
-        <ul class="cart-container">
-        <li><img src="https://i.pinimg.com/564x/fc/b2/72/fcb272223e321e43b737e57743741350.jpg" alt=""></li>
-        <li><strong>producto</strong></li>
-        <li><strong>total productos:</strong></li>
-        <li><strong>$ 0.00</strong></li>
-       </ul>
+      <div class="head">mis compras 7u7</div>   
+      <ul class="cart-container">
+      <li><img src="https://i.pinimg.com/564x/fc/b2/72/fcb272223e321e43b737e57743741350.jpg" alt=""></li>
+      <li><strong>producto</strong></li>
+      <li><strong>total productos:</strong></li>
+      <li><strong>$ 0.00</strong></li>
+     </ul>
 
-    </section>
+  </section>
   </main>
   <footer>
     <ul>
