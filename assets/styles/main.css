@@ -73,6 +73,15 @@ header nav ul{
 .cursor:hover{
   cursor: pointer;
 }
+/* style of cartstatus */
+.cart_status{
+  background-color: red;
+  padding: 2px ;
+  color: white;
+  border-radius: 20px;
+  font-weight: bolder;
+  margin-right: 5px;
+}
 /* ancho y altura del main */
 main{
   width: 100%;
@@ -119,14 +128,14 @@ main .main--element-container .product--cards-container .cards{
   background-color: goldenrod;
   padding: 10px;
   border-radius: 20px;
-  border: white 5px groove;
+  border: var(--third-color) 5px groove;
   align-items: center;
 }
 /* tamaño de las imagenes que contendra el card */
 main .main--element-container .product--cards-container .cards img {
   width: 250px;
   height: 200px;
-  border: white 5px  groove;
+  border: var(--third-color) 5px  groove;
   border-radius: 20px;
 }
 /* estilo del h3 del card */
@@ -138,6 +147,56 @@ main .main--element-container .product--cards-container .cards h3{
 main .main--element-container .product--cards-container .cards .price{
   font-size: 22px;
   font-weight: bolder;
+}
+/* estilo del boton */
+main .main--element-container .product--cards-container .cards button{
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 3px;
+  border-radius: 10px;
+  color: var(--secondary-color);
+  background-color: var(--third-color);
+  position: relative;
+}
+/* estilo del addpoint */
+.addPoint{
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 100;
+  background-color: red;
+  display: block;
+  position: absolute;
+  visibility: hidden;
+}
+.addPoint.added{
+  animation: added .5s linear;
+  visibility: visible;
+}
+@keyframes added {
+  0%{
+    top: -10px;
+    right: -10px;
+  }
+  25%{
+    top: -80px;
+    right: -50px;
+  }
+  50%{
+    top: -120px;
+    right: 0;
+  }
+  75%{
+    top: -175px;
+    right: -50px;
+  }
+  100%{
+    top: -20px;
+    right: -30px;
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 0, 0, 0);
+  }
 }
 /* estilo del details de los productos */
 main .main--element-container .product--cards-container .cards details summary{

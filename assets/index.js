@@ -80,7 +80,8 @@ let containerCards = document.querySelector('.product--cards-container');
         <img src="${item.img}" alt="${item.tittle}">
         <h3>${item.tittle}</h3>
         <p class="price">${item.price} $</p>
-        <button onclick="addToCart(${item.id})">agregar al carrito de compras</button>
+        <button onclick="addToCart(${item.id})">Agregar al carrito 
+        <span class="addPoint add${item.id}">1</span></button>
         <details>
           <summary >descripcion del producto</summary>
           <p>${item.desc}</p>
